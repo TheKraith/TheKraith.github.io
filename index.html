@@ -2,103 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Flower Garden Watering Guide</title>
-        
-        <script>
-            // Calculate Watering time
-            function calculateTime() {
-                var radioButton; // A Radio Button
-                var checkbox; // A Checkbox
-                var baseTime = 0; // Base Watering Time set by Watering System
-                var plantSizeModifier = 1; // Modifier based on Large Plant Checkbox
-                var soilModifier = 0; // Modifier based on Soil Type
-                var wateringTime = 1; // End Watering Time calculated using base and modifiers
-                
-                /*
-                This for loop goes through each radiobutton in the watering system
-                If that button is selected it will take its value as the baseTime
-                */
-                for (var i = 1; i <= 4; i++) {
-                    radioButton = document.getElementById("watering" + i);
-                    if (radioButton.checked == true) {
-                        baseTime = radioButton.value;
-                    }
-                }
-                
-                // Checks if large plant is checked, if so sets modifier to 1.5
-                checkbox = document.getElementById("largeplants");
-                if (checkbox.checked == true) {
-                    plantSizeModifier = 1.5;
-                } else {
-                    plantSizeModifier = 1;
-                }
-                
-                /*
-                This for loop goes through each radiobutton in the soil types
-                If that button is selected it will take its value as the soil type modifier
-                */
-                for (var i = 1; i <= 3; i++) {
-                    radioButton = document.getElementById("soil" + i);
-                    if (radioButton.checked == true) {
-                        soilModifier = radioButton.value;
-                    }
-                }
-                
-                // Checks if baseTime or soilModifier is 0 meaning a button wasn't selected
-                // Gives error and ends function is true
-                if (baseTime == 0) {
-                    alert("Error: No Watering System Selected");
-                    return;
-                } else if (soilModifier == 0) {
-                    alert("Error: No Soil Type Selected");
-                    return;
-                }
-                
-                // Calculated watering time using base time and modifiers
-                wateringTime = baseTime * plantSizeModifier * soilModifier;
-                
-                // Rounds watering time to nearest whole number
-                wateringTime = Math.round(wateringTime);
-                
-                // Displays watering time
-                alert("The recommended watering time is " + wateringTime + " minutes");
-            }
-        </script>
-        
+        <title>web</title>
     </head>
     <body>
-        <h1>Flower Garden Watering Guide</h1>
-        
-        <p>Complete the form below to calculate the recommended watering time for your flower garden.</p>
-        
-        <form>
-            
-            <p>Watering system:</p>
-            <input type="radio" id="watering1" name="watering_system" value="6">
-            <label for="watering1">Jet spray</label><br>
-            <input type="radio" id="watering2" name="watering_system" value="11">
-            <label for="watering2">Sprinkler</label><br>
-            <input type="radio" id="watering3" name="watering_system" value="17">
-            <label for="watering3">Mini sprinkler</label><br>
-            <input type="radio" id="watering4" name="watering_system" value="50">
-            <label for="watering4">Dripper</label><br>
-            
-            <br>
-            
-            <label for="largeplants">Click here if your plants are large:</label>
-            <input type="checkbox" id="largeplants" name="largeplants" value="1.5"><br>
-            
-            <br>
-            
-            <p>Soil type:</p>
-            <input type="radio" id="soil1" name="soiltype" value="1">
-            <label for="soil1">Sand</label><br>
-            <input type="radio" id="soil2" name="soiltype" value="2">
-            <label for="soil2">Loam</label><br>  
-            <input type="radio" id="soil3" name="soiltype" value="3.5">
-            <label for="soil3">Clay</label><br><br>
-            <input type="button" value="Calculate" onclick="calculateTime();">
-            <input type="reset" value="Reset">
-        </form>
+        <h1>Cool Website</h1>
+        <p>I did it!</p>
     </body>
 </html>
