@@ -1,0 +1,138 @@
+<html>
+<head>
+
+<title>Kraith's WebMD</title>
+<link rel="icon" type="image/x-icon" href="/img/gull.ico">
+
+<script>
+	function calculateHurt() {
+		var e = document.getElementById("health1");
+		var type = e.value;
+
+		switch (type) {
+			case "Crotch":
+			crotchChosen();
+			break;
+			
+			case "Head":
+			headChosen();
+			break;
+			
+			case "Skin":
+			alert("Australian Moment");
+			alert("also, Skin Cancer");
+			break;
+	
+			case "Everywhere":
+			alert();			
+			break;
+
+			case "choose":
+			alert("Please Choose Where it Hurts");
+			break;
+
+			default:
+				alert(type + " Cancer");
+		}
+	}
+
+	function crotchChosen() {
+		var pass = false;
+		while (pass == false) {
+			var gender = prompt("What gender are you? M/F/NB");
+			
+			switch (gender) {
+				case "M":
+				alert("Crotch Cancer");
+				pass = true;
+				break;
+	
+				case "F":
+				alert("Crotch Cancer");
+				pass = true;
+				break;
+
+				case "NB":
+				alert("Ambiguous Crotch Cancer");
+				pass = true;
+				break;
+
+				default:
+				alert("Please input a gender in the form of 'M', 'F' or 'NB'");
+				
+			}
+		}
+	}
+
+	function headChosen() {
+		var pass = false;
+		while (pass == false) {
+			var typeOf = prompt("Is the pain 'Physical' or 'Metaphysical'?");
+			
+			switch (typeOf) {
+				case "Physical":
+				alert("Head Cancer");
+				pass = true;
+				break;
+
+				case "Metaphysical":
+				alert("\"Toughen Up\"" + "\n" + "Sincerely, The Boomer Community");
+				pass = true;
+				break;
+
+				default:
+				alert("Capitalise the first letter");
+			}
+		}
+	}
+</script>
+
+<style>
+#form {
+text-align: center;
+vertical-align: center;
+}
+
+#health1 {
+width:250px;
+text-align: center;
+font-size: 25;
+}
+
+#submit {
+width:150px;
+font-size:20;
+}
+</style>
+
+</head>
+<body>
+
+<form id="form">
+<label style="font-size:50;" for="health">Where does it hurt?</label>
+<br>
+<br>
+<select name="health" id="health1">
+<option value="choose">Select</option>
+<option value="Bladder">Bladder</option>
+<option value="Blood">Leukemia</option>
+<option value="Bone">Bone</option>
+<option value="Breast">Breast</option>
+<option value="Crotch">Crotch</option>
+<option value="Head">Head</option>
+<option value="Kidney">Kidney</option>
+<option value="Liver">Liver</option>
+<option value="Lung">Lung</option>
+<option value="Skin">Skin</option>
+<option value="Stomach">Stomach</option>
+<option value="Throat">Throat</option>
+<option value="Everywhere">Everywhere</option>
+</select>
+<br>
+<br>
+<input id="submit" type="submit" value="Submit" onclick="calculateHurt(); return false;">
+</form>
+
+
+</body>
+</script>
