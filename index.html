@@ -1,54 +1,177 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Kraith's Cool Website!</title>
-	<link rel="icon" type="image/x-icon" href="/img/gull.ico">
-	<style>
-	body {
-	   background-image: url("../img/back.gif");
-	  background-color: #800080;
-	}
-	h1 {text-align: center;
-	    color: #00FF00;}
-	p {text-align: center;
-	    color: #00FF00;}
-	h2 { text-align: center;
-	    color: #e0b0ff;
-	    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;}
-	img {
-  		display: block;
-  		margin-left: auto;
-  		margin-right: auto;
-	}
-	#bottom {
-		left:0px; right:0px;
-    		position: fixed; 
-    		background:#800080; 
-    		width:100%;
-    		bottom:0;
-		background-image: url("../img/scomo.jpg");
-		background-size: 80px;
-	}
-	</style>
+<html lang="en">
+	<head>
+		<!-- Meta Data -->
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
+        <!-- Jquery and Bootstrap References -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/custom.css">
+
+        <style>
+          a.card-link {
+            color: black;
+            text-decoration: none;
+          }
+
+          a.card-link:hover {
+            color: blue;
+            text-decoration: none;
+          }
+        </style>
+
+        <!-- Page Title -->
+        <title>Rocky Real Estate</title>
+	</head>
     <body>
-        <h1 style="font-size:300%;">Kraith's Epic Website</h1>
-        <p>Here We Only Take Victory Royales</p>
-	<a href="webmd">
-	<img src="../img/running.gif" alt="he ran away" />
-	</a>
-	<br>
-	<br>
-	
+        <div class="container">
 
-	<div id="bottom"> 
-	<br>
-	<h2 style="font-size:300%;">Scott Morrison Approved!</h2>
-	<br>
-	<br>
-	</div>
-	
+            <h1>Rocky Real Estate</h1>
+
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                  </ul>
+                  
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+
+            <h2 style="padding: 10px 0px 0px 10px;">Featured Properties for Sale</h2>
+            <div class="row p-3">
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Sale1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">123 Sesame Street</h5>
+                      <p class="card-text">Gracemere</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Sale2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">24 Harris Street</h5>
+                      <p class="card-text">Rockhampton North</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Sale3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">84 Myrtle Street</h5>
+                      <p class="card-text">Rockhampton North</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Sale4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">56 Bayview Road</h5>
+                      <p class="card-text">Rockhampton South</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <h2 style="padding: 10px 0px 0px 10px;">Featured Properties for Rent</h2>
+            <div class="row p-3">
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Rent1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">21 Chapman Avenue</h5>
+                      <p class="card-text">Rockhampton South</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Rent2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">87 Davenport Street</h5>
+                      <p class="card-text">Gracemere</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Rent3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">12 Mt Berryman Road</h5>
+                      <p class="card-text">Gracemere</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3 pb-3">
+                <a href="property.html" class="card-link">
+                  <div class="card">
+                    <img src="img/Rent4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">22 Walters Street</h5>
+                      <p class="card-text">Rockhampton South</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>  
+
+
+
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled flat-list">
+                            <li><a href="#" target="_self">Home</a> | </li>
+                            <li><a href="aboutus.html" target="_self">About Us</a> | </li>
+                            <li>Craig Smith | </li>
+                            <li>12139569</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

@@ -1,1 +1,0 @@
-<img src="../img/scomo.jpg" alt="scomo" width="100" height="99" align="right" />
