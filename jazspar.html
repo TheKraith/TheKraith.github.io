@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copper Golem Simulator</title>
+</head>
+<body>
+
+<h2>Copper Golem Simulator</h2>
+<button onclick="generateShitTalk()">click</button>
+<p id="shitTalkOutput"></p>
+
+<script>
+    const shitTalks = [
+        "Jazspar couldn't even make a sandwich without getting lost.",
+        "I heard Jazspar tried to toast bread... in the fridge.",
+        "Every time Jazspar opens his mouth, I remember the importance of silence.",
+        "If brains were dynamite, Jazspar wouldn't have enough to blow his nose.",
+        "Jazspar always brings joy to the room... when he leaves it.",
+        "Jazspar is the reason we can't have nice things.",
+        "If I had a penny for every time Jazspar said something smart, I'd still be broke.",
+        "Jazspar's not stupid; he's just possessed by a low IQ.",
+        "Jazspar's like a broken pencil: pointless.",
+        "I'd agree with Jazspar but then we’d both be wrong."
+    ];
+
+    function generateShitTalk() {
+        const randomIndex = Math.floor(Math.random() * shitTalks.length);
+        document.getElementById("shitTalkOutput").innerText = shitTalks[randomIndex];
+    }
+</script>
+
+</body>
+</html>
